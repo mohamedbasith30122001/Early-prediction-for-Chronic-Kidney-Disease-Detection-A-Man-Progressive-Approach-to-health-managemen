@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            predict
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/result" method="post">
+            <div style="color:azure; text-align: center;width: 100%;
+    height: 60px;
+    font-style:italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(80deg, indigo, violet);
+    background-color: linear-gradient(indigo,violet);">Chronic Kidney Disease</div><br><br>
+                <div class="col-md-12 bg-light text-right">
+                    <div class="navbar" style="justify-content: end;">
+                    <a href="'home.html" method="post"><input type="button" value="Home" style="margin-left:85%; font-size: large; border-radius: 40px; height: 30px; width: 90px; box-shadow: black 4px 3px 5px 0px;"></a>
+                    <a href="predict.html" method="post"><input type="button" value="Predict" style="margin-left:85%; font-size: large; border-radius: 40px; height: 30px; width: 90px; box-shadow: black 4px 3px 5px 0px;"></a>
+                s</div>
+            </div>
+            <br>
+            <center><h1 style="text-transform: uppercase;margin-top:-3%;color:indigo;"><strong>Chronic Kideny Disease Classification</strong></h1>
+                <!-- <div style="color: black;" class="results"> 
+                    {% if prediction==1 %}
+                           <h1><span class='danger'>Oops! You have CHRONIC KIDNEY DISEASE.<br><br>Please Consult Doctor.</span></h1>
+               <br><br><br><br><br><br>
+                           <img class="gif" src="{{url_for('static',filename='no.gif')}}" alt="STROKE Image">
+                    {% elif prediction==0 %}
+                           <h1><span class='safe'> Congratulation! You Don't have CHRONIC KIDNEY DISEASE.</span></h1>
+                           <img class="gif1" src="{{url_for('static',filename='yes2.webp')}}" alt="NOT STROKE Image">   
+                    {% endif %} -->
+                <h3 style="text-transform: uppercase;margin-top:4%; color:blueviolet;"><strong>prediction: Congratulation! You Don't have CHRONIC KIDNEY DISEASE.E</strong></h3></center>
+            </form>
+        </div>
+    </body>
+</html>

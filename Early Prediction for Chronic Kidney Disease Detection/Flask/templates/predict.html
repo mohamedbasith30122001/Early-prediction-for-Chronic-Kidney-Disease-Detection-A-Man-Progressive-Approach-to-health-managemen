@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatile" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Early  prediction for chronic kidney disease detection </title>
+    <link rel="stylesheet" href="predict.css">
+</head>
+  <body>
+    <div style="color:azure; text-align: center;width: 100%;
+    height: 50px;
+    font-style:italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(80deg, indigo, violet);
+    background-color: linear-gradient(indigo,violet);"><h1>Chronic Kidney Disease Classification</h1></div><br><br>
+    <form action="/pred" method="post">
+    <main style="width: 420px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;">
+      <input type="text" id="blood_urea" name="blood_urea" placeholder="Enter your blood_urea" style="width: 400px;
+      text-align: center;
+      margin: 5px;">
+      <input type="text" id="blood_glucose_random" name="blood_glucose_random" placeholder=" Enter your blood_glucose_random" style="width: 400px;
+      text-align: center;
+      margin: 5px;">  
+      <select name="anemia" id="anemia" style="width: 408px;
+      text-align: center;
+      margin: 5px;">
+        <option value="select anemia or not">select anemia or not</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <select name="coronary_artery_disease" id="coronary_artery_disease" style="width: 408px;
+      text-align: center;
+      margin: 5px;">
+        <option value=" select coronary_artery_disease or not">select coronary_artery_disease or not</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <select name="pus_cell" id="pus_cell" style="width: 408px;
+      text-align: center;
+      margin: 5px;">
+        <option value="select pus_cell or not">select pus_cell or not</option>
+        <option value="1">Normal</option>
+        <option value="0">Abnormal</option>
+      </select>
+      <select name="red_blood_cell" id="red_blood_cell" style="width: 408px;
+      text-align: center;
+      margin: 5px;">
+        <option value="select red_blood_cell or not">select red_blood_cell or not</option>
+        <option value="1">Normal</option>
+        <option value="0">Abnormal</option>
+      </select>
+      <select name="diabetesmellitus" id="diabetesmellitus" style="width: 408px;
+      text-align: center;
+      margin: 5px;">
+        <option value="select diabetesmellitus or not">select diabetesmellitus or not</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <select name="pedal_edema" id="pedal_edema" style="width: 408px;
+      text-align: center;
+      margin: 5px;">
+        <option value="select pedal_edema or not">select pedal_edema or not</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+
+      <div class="butDiv" style="background: none;">
+       <center><a href="result.html"><input type="button" value="SUBMIT" style="font-size: large;
+        border-radius: 40px;
+        height: 40px;
+        width: 120px;
+        box-shadow: black 4px 3px 5px 0px;
+        margin: 14px 100px;"></center></a>
+      </div>
+    </main>
+    </form>
+  </body>
+</html>
